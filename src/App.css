@@ -1,0 +1,108 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f7f9f7; /* Very soft green for background */
+  margin: 0;
+  padding: 0;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d7e6cc; /* Light olive green background */
+  padding: 40px;
+  border-radius: 15px;
+  width: 70%; /* Bigger form width */
+  margin: 50px auto;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25); /* Larger shadow for depth */
+}
+
+.form-title {
+  font-size: 32px; /* Bigger title font */
+  font-weight: bold;
+  color: #354d27; /* Darker olive green text */
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Wrap fields on smaller screens */
+  width: 100%;
+  gap: 20px; /* Add space between fields */
+}
+
+.form-group {
+  width: 48%; /* Larger fields in desktop view */
+  margin-bottom: 25px; /* More spacing between fields */
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 16px; /* Slightly bigger label text */
+  color: #354d27; /* Dark olive green text for labels */
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 14px; /* Larger padding for input fields */
+  border: 2px solid #a0b494; /* Soft olive green border */
+  border-radius: 8px;
+  font-size: 16px; /* Larger input font size */
+  background-color: #f3f6ef; /* Very light olive background */
+  color: #354d27; /* Darker olive text */
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); /* Slight inner shadow */
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #79965b; /* Brighter olive border on focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(121, 150, 91, 0.5); /* Light green glow */
+}
+
+textarea {
+  resize: vertical;
+  height: 120px; /* Bigger default height */
+}
+
+.submit-container {
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #79965b; /* Olive green button */
+  color: #ffffff; /* White text */
+  padding: 15px 50px; /* Bigger button size */
+  border: none;
+  border-radius: 8px;
+  font-size: 18px; /* Larger font size for button */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #5e7d43; /* Darker olive green on hover */
+  transform: translateY(-3px); /* Slight upward movement */
+}
+
+@media screen and (max-width: 768px) {
+  .form-group {
+    width: 100%; /* Stack fields on smaller screens */
+  }
+
+  .form-container {
+    width: 90%; /* Adjust form width for small devices */
+    padding: 30px;
+  }
+
+  button {
+    width: 100%; /* Full-width button on mobile */
+  }
+}

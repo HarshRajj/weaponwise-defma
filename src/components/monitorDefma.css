@@ -1,0 +1,285 @@
+/* Base Styles */
+.monitor-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4e8; /* Light Olive Background */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    width: 85%;
+    margin: auto;
+    padding-top: 80px; /* Space for top alert */
+  }
+  
+  /* Live Monitoring Title */
+  .live-monitoring-title {
+    color: #405a24; /* Dark Olive Green */
+    font-size: 38px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  
+  /* Metrics Container */
+  .metrics-container {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin-bottom: 25px;
+    gap: 20px;
+  }
+  
+  .metric-box {
+    flex: 1;
+    padding: 20px;
+    background: #e0e6c9; /* Soft Olive */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .metric-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .metric-box h3 {
+    font-size: 20px;
+    color: #20221f; /* Deep Olive Green */
+    margin-bottom: 10px;
+  }
+  
+  .metric-value {
+    font-size: 32px;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    color: #2f3f11; /* Darker Olive Green */
+  }
+  
+  .metric-box .unit {
+    font-size: 18px;
+    color: #54682d; /* Olive Border */
+    opacity: 0.8;
+  }
+  
+  /* Odometer Section */
+  .odometer-section {
+    width: 85%;
+    margin: 20px 0;
+    padding: 15px;
+    background: #c3cdad; /* Soft Green */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .odometer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  .odometer {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    background: #e0e6c9; /* Dark Olive Green */
+    padding: 15px 25px;
+    border-radius: 8px;
+    color: white;
+  }
+  
+  .odometer-label {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .odometer-value {
+    font-size: 32px;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .odometer-unit {
+    font-size: 18px;
+    opacity: 0.8;
+  }
+  
+  .max-limit {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    background: #d1d9b0; /* Soft Green */
+    padding: 12px 20px;
+    border-radius: 8px;
+  }
+  
+  .limit-label {
+    font-size: 16px;
+    color: #2f3f11; /* Darker Olive Green */
+  }
+  
+  .limit-value {
+    font-size: 24px;
+    font-family: 'Courier New', monospace;
+    color: #405a24; /* Dark Olive Green */
+    font-weight: bold;
+  }
+  
+  .limit-unit {
+    font-size: 16px;
+    color: #54682d; /* Olive Border */
+  }
+  
+  /* Charts Container */
+.charts-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 85%;
+    margin: 20px 0;
+  }
+  
+  /* Graph Sections */
+  .graph-section {
+    width: calc(50% - 15px); /* Split container width minus gap */
+    height: 600px; /* Increased height */
+    padding: 20px;
+    background: #e0e6c9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .large-graph {
+    width: 100%;
+    height: 100%; /* Take full height of parent */
+    min-height: 500px; /* Minimum height */
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .graph-section h2 {
+    font-size: 26px; /* Larger title */
+    color: #35461e;
+    margin-bottom: 20px;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 1200px) {
+    .charts-container {
+      flex-direction: column;
+    }
+    
+    .graph-section {
+      width: 100%;
+      height: 500px;
+      margin-bottom: 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .graph-section {
+      height: 400px;
+      padding: 15px;
+    }
+    
+    .large-graph {
+      min-height: 300px;
+      padding: 10px;
+    }
+    
+    .graph-section h2 {
+      font-size: 22px;
+    }
+  }
+  
+  /* GPS Section */
+  .gps-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    width: 85%;
+    padding: 15px;
+    background: #d1d9b0; /* Soft Green */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  .gps-section h2 {
+    font-size: 24px;
+    color: #7cb314; /* Darker Olive Green */
+    margin-bottom: 15px;
+  }
+  
+  .gps-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .gps-box {
+    width: 260px;
+    padding: 12px;
+    text-align: center;
+    border: 2px solid #54682d; /* Olive Border */
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .gps-box:hover {
+    transform: scale(1.05);
+    background-color: #e8e8e8;
+  }
+  
+  /* Alert Banner */
+  .top-alert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #d9534f; /* Emergency Red */
+    color: white;
+    z-index: 1000;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid #a94442;
+  }
+  
+  .alert-content {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.2em;
+  }
+  
+  .alert-content button {
+    background: white;
+    color: #d9534f;
+    border: none;
+    padding: 12px 30px;
+    margin-top: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  
+  .alert-content button:hover {
+    background: #ffcccc;
+    transform: scale(1.05);
+  }

@@ -1,0 +1,87 @@
+/* Overall page styling */
+#main {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  /* background-color: #f4f4f4; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+/* Watermark background image styling */
+#main::before {
+  content: "";
+  
+  background: url("/public/images/bg.jpg") no-repeat center center;
+  background-size:cover; /* Ensure the entire image is contained within the area */
+  /* Adjust opacity to make it look like a watermark */
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Centering transformation */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  z-index: 1;
+}
+
+.login-container {
+  background-color: FAF6E3; /* Olive Green with slight transparency */
+  color: white;
+  border-radius: 10px;
+  padding: 40px;
+  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); */
+  max-width: 400px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.login-title {
+  text-align: center;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+}
+
+.login-form {
+  position: relative;
+  z-index: 2;
+}
+
+.login-form .form-group {
+  margin-bottom: 15px;
+}
+
+.login-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.login-button {
+  background-color: #A38550; /* Darker olive green */
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+.login-button:hover {
+  background-color: #c69e57; /* Slightly darker olive for hover effect */
+}

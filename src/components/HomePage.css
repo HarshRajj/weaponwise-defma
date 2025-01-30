@@ -1,0 +1,233 @@
+/* Navbar styling */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem 0.2rem 0.5rem;
+    background-color: #4b5320; /* Olive green */
+    color: white;
+    position: relative;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: gold; /* Gold for prominence */
+}
+.logo img{
+    height: 3.5rem;
+    width: auto;
+    border-radius: 4px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+.nav-links {
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem;
+    position: relative;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links a:hover {
+    background-color: #3c4029; /* Slightly darker green for hover effect */
+    border-radius: 5px;
+}
+
+
+
+/* Slideshow */
+.slideshow {
+    display: flex;
+    overflow: auto;
+    width: 100%; /* Ensure the slideshow takes the full width */
+    height: auto; /* Set height to 60% of the viewport height (2/3 of the page) */
+    position: relative;
+}
+
+.slide {
+    flex: 0 0 100%; /* Make each slide take full width */
+    background-size: cover; /* Ensure the image covers the entire slide width */
+    background-position: center; /* Keep the image centered */
+    height: 100%; /* Set height to match slideshow's height (60vh) */
+    transition: opacity 0.5s ease-in-out; /* Smooth transition for slides */
+    opacity: 0; /* Initially hide all slides */
+    position: relative;
+}
+
+.active {
+    opacity: 1; /* Show the active slide */
+}
+
+/* Slideshow container */
+.slideshow {
+    display: flex;
+    width: 100%;
+    height: 60vh; /* Adjust this to 2-3rd of the screen */
+    position: relative;
+    overflow: hidden; /* Hide the images that are off-screen */
+}
+
+/* Slideshow image styles */
+.slide {
+    width: 100%; /* Each image will take the full width */
+    height: 100%; /* Height is controlled to be 60vh */
+    position: absolute;
+    top: 0;
+    left: 100%; /* Initially off-screen to the right */
+    background-size: cover; /* Ensure the image fills the container */
+    background-position: center; /* Keep the image centered */
+    transition: left 1s ease-in-out; /* Smooth sliding transition */
+}
+
+/* When an image becomes active, slide it to the left (visible) */
+.slide.active {
+    left: 0;
+}
+
+/* For the previous slide to go out to the left */
+.slide.prev {
+    left: -100%;
+}
+
+/* Notification Bar */
+.notification-bar {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+
+/* Action Buttons Section */
+.button-section {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    width: 100%; /* Ensure full width for the parent container */
+}
+
+.action-button, .dropbtn {
+    padding: 15px 30px;
+    background-color: #575414;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    font-size: 1rem;
+    width: 160px; /* Set fixed width to ensure consistent size */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.action-button:hover, .dropbtn:hover {
+    background-color: #312f07;
+    transform: scale(1.1); /* Slightly increases size on hover */
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3c4029;
+    min-width: 150px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+}
+
+.dropdown-content a:hover {
+    background-color: #232c20;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+/* Information Boxes */
+.info-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.info-box {
+    padding: 20px;
+    background-color: #e2e2e2;
+    border-radius: 8px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* About Us Section */
+.about-us {
+    padding: 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 20px 0;
+}
+
+/* Footer */
+.footer {
+    background-color: #4b5320; /* Olive green */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+}
+.footer a{
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .button-section,
+    .info-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    .action-button {
+        min-width: 180px; /* Slightly larger buttons for mobile */
+    }
+}

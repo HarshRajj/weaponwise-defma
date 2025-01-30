@@ -1,0 +1,83 @@
+/* Overall form container */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4e8; 
+}
+
+/* Form styling */
+.form-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #99af5d; /* Olive Green */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 90%; /* Increased width */
+  max-width: 900px;
+}
+
+/* Left and right sides */
+.form-left, .form-right {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Labels */
+.form-label {
+  font-size: 16px;
+  font-weight: bold;
+  color: black; /* Labels in black */
+  margin-top: 10px;
+}
+
+/* Inputs and textarea styling */
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #a3a67b;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f8f8f2;
+}
+
+/* Dropdown styling */
+select {
+  cursor: pointer;
+}
+
+/* Submit Button Styling */
+.submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  padding: 12px;
+  margin-top: 60px;
+  margin-left: 350px;
+  background-color: #54682d;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  align-self: center; /* Centers the button */
+}
+
+.submit-button:hover {
+  background-color: #2f3f11;
+}
+
+/* Form Title */
+.form-title {
+  text-align: center;
+  color: #62783a; /* Dark Olive Green */
+  margin-bottom: 20px;
+  font-size: 50px;
+}

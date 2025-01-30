@@ -1,0 +1,32 @@
+.table-container {
+    width: 90%;
+    margin: 20px auto;
+    overflow-x: auto;
+  }
+  
+  .table-title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  

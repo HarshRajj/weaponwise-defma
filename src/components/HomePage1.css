@@ -1,0 +1,210 @@
+/* Reset margins and padding */
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  background-color: #d8e3d6; 
+  color: #333;
+  overflow-x: hidden; 
+}
+
+.App {
+  text-align: center;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4e5b31; /* Olive green */
+  padding: 15px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar .logo img {
+  height: 50px; /* Set the height of the logo image */
+  width: 200px; /* Maintain aspect ratio */
+}
+
+.nav-links {
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-links ul {
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 540;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #4f6234; /* Light olive green */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for the buttons */
+}
+
+.nav-links a:hover {
+  background-color: #3c4029; /* Darker olive green on hover */
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: block;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.hamburger-menu {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  background-color: black;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Soft shadow */
+  z-index: 1000;
+}
+
+.hamburger-menu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.hamburger-menu li {
+  margin: 15px 0;
+}
+
+.hamburger-menu a {
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.hamburger-menu a:hover {
+  color: #60625f; /* Golden hover effect */
+}
+
+/* Slideshow */
+.slideshow {
+  width: 100vw; /* Full width of the viewport */
+  height: 65vh; /* 65% of the viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevent images from overflowing */
+  position: relative;
+}
+
+.slideshow img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures images cover the area without distortion */
+  border-radius: 8px; /* Smooth edges for images */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Soft shadow around the slideshow */
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 35px; /* Increased space between buttons */
+  margin-top: 55px; /* Space from slideshow */
+  margin-bottom: 60px;
+  padding: 0 20px;
+}
+
+.btn {
+  background-color: #4e5b31; /* Olive green */
+  color: white;
+  padding: 18px 35px; /* Larger buttons */
+  border: none;
+  border-radius: 8px; /* Slightly rounded edges */
+  font-size: 20px;
+  font-weight: 520;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow for buttons */
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.btn:hover {
+  background-color: #3a4a27; /* Darker olive green */
+  transform: translateY(-3px); /* Slight lift on hover */
+}
+
+.btn:active {
+  transform: translateY(1px); /* Button press effect */
+}
+
+/* About Us Section */
+.about-us {
+  padding: 20px;
+  text-align: center;
+  background-color: #a0b884;
+  margin: 20px 0;
+}
+
+/* Footer */
+.footer {
+  background-color: #4b5320; /* Olive green */
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+.footer a{
+  color: white;
+  text-decoration: none;
+}
+/* Responsive for small screens */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger-menu {
+    display: block;
+    padding: 15px;
+  }
+
+  .hamburger-menu a {
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 15px 30px;
+    font-size: 18px;
+  }
+}
