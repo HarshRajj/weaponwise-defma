@@ -1,6 +1,6 @@
 # DEFMA: Defence Fleet & Armament Management System
 
-**DEFMA** is a comprehensive, modern solution designed to revolutionize logistics and management for the Indian Army. As the visionary and team lead of **BugHunters**, I conceptualized and guided the development of this integrated platform to enhance the efficiency, security, and real-time tracking of both vehicle fleets and KOTE (armoury) equipment.
+**DEFMA** is a comprehensive, modern solution designed to revolutionize logistics and management for the Indian Army. As a core developer on team **BugHunters**, I contributed to the design and implementation of this integrated platform, focusing on building robust features to enhance the efficiency, security, and real-time tracking of both vehicle fleets and KOTE (armoury) equipment.
 
 This project moves beyond traditional, manual register-based systems, introducing a robust, digital-first approach to solve critical logistical challenges faced by our defence forces.
 
@@ -39,13 +39,17 @@ This project leverages a modern and robust technology stack to deliver a seamles
 
 ## 📖 Project Vision & My Role
 
-As the team lead for **BugHunters**, my vision was to create a unified system that addresses critical, real-world logistical gaps in defence management. I led the project from ideation to execution, focusing on:
 
-* **Strategic Direction:** Defining the problem statement and architecting a solution that was both technologically advanced and practical for military use.
-* **Team Leadership:** Guiding the development process and ensuring the final product was secure, reliable, and aligned with our goals.
-* **Hands-On Development:** I believe in leading from the front and was actively involved in the development and implementation of key features.
+As the core developer on team **BugHunters**, I played a key role in building a unified system that addresses critical, real-world logistical gaps in defence management. My primary contributions centered on developing robust features and ensuring the technical excellence of the platform. My work focused on:
 
-This project is a testament to my commitment to using my skills in AI and software engineering to build impactful, real-world solutions.
+
+* **Feature Development:** Designed and implemented robust, scalable features to meet the complex requirements of defence logistics and armament management.
+
+
+* **Technical Problem Solving:** Tackled challenging technical problems and optimized the system for performance, security, and reliability.
+
+
+This project is a testament to my commitment to leveraging my skills in software engineering and AI to deliver impactful, real-world solutions.
 
 ---
 
@@ -62,7 +66,7 @@ To get a local copy up and running, follow these simple steps.
 
 1.  Clone the repo
     ```sh
-    git clone [https://github.com/arjunheregeek/defma_weaponwise.git](https://github.com/arjunheregeek/defma_weaponwise.git)
+    git clone (https://github.com/HarshRajj/weaponwise-defma.git)
     ```
 2.  Install NPM packages for the front-end
     ```sh
